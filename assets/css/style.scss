@@ -1,0 +1,194 @@
+//cores
+$branco: #fff;
+$branco-gelo: #E5E5E5;
+$preto: #000;
+$hibisco: #B73D26;
+$hibisco-claro: #D85931;
+$cinza-claro: #DADADA;
+$cinza-medio: #C4C4C4;
+$cinza-escuro: #909090;
+$mostarda-escuro: #E27B01;
+$mostarda-claro: #FF8A00;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Benton Sans Condensed Regular';
+    src: url('../fonts/BentonSans\ Condensed\ Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benton Sans Condensed Black';
+    src: url('../fonts/BentonSans\ Condensed\ Black.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+.cabecalho {
+    position: static;
+    gap: 30rem;
+    background-color: $hibisco;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5.93rem;
+
+
+    .cabecalho-imagem{
+        position: relative;
+        align-self: baseline;
+        width: 3.63rem;
+        height: 17.33rem;
+        margin-left: 9.91rem;
+        margin-top: 1.3rem;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 39.61rem;
+        height: 2.37rem;
+    
+
+        .nav-link{
+            color: $branco;
+            font-family: 'Benton Sans Condensed Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $mostarda-escuro;
+                font-family: 'Benton Sans Condensed Regular';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 22px;
+                letter-spacing: 0.2em;
+                text-align: left;
+            }
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+        }
+    }
+}
+
+.conteudo{
+    width: 100%;
+    height: 47.8rem;
+    background-color: $hibisco;
+    
+
+    .entrada-marun{
+        width: 100%;
+    }
+
+    .conteudo-texto{
+        width: 28rem;
+        position: relative;
+        top: -20rem;
+        left: 30rem;
+    }
+
+    .titulo{
+        font-family: 'Benton Sans Condensed Black';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 4.81rem;
+    }
+
+    .titulo-branco{
+        color: $branco;
+    }
+
+    .titulo-mostarda{
+        color: $mostarda-claro;
+    }
+
+    .texto {
+        color: $branco;
+        font-family: 'Benton Sans Condensed Regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+    }
+
+    .texto b{
+        color: $hibisco
+    }
+}
+
+.cozinha{
+    margin: auto;
+    width: 67rem;
+    display: flex;
+    justify-content: space-around;
+    
+    .chef-imagem{
+        width: 30rem;
+        border-radius: 8px
+    }
+
+    .conteudo-texto-cozinha{
+        padding-left: 3rem;
+
+        .nome-card{
+
+            padding-top: 4rem;
+            text-transform: uppercase;
+            color: $hibisco;
+            font-family: 'Benton Sans Condensed Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            letter-spacing: 0.745em;
+        }
+        
+        .titulo-cozinha{
+            font-family: 'Benton Sans Condensed Black';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+        }
+
+        .titulo-cozinha-hibisco{
+            color: $hibisco;
+        }
+
+        .texto {
+            padding-top: 4rem;
+            color: $preto;
+            font-family: 'Benton Sans Condensed Regular';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+        }
+    
+        .texto b{
+            color: $hibisco
+        }
+    }  
+}
