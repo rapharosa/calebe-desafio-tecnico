@@ -355,12 +355,7 @@
 }
 
 .sobre {
-  margin: 6.5rem auto;
   background-image: url(../img/rectangle-3.png);
-}
-
-.sobre .galeria-sobre {
-  margin: 6.5rem 0;
 }
 
 .sobre .galeria-sobre .siga {
@@ -373,6 +368,9 @@
 }
 
 .sobre .galeria-sobre .fotos-sobre {
+  height: 16rem;
+  background-image: url(../img/grafismos-sobre.png);
+  background-size: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,11 +382,158 @@
 }
 
 .sobre .galeria-sobre .fotos-sobre .galeria-instagram {
+  margin: auto;
   width: 12rem;
   height: 12rem;
 }
 
-.sobre .galeria-sobre .fotos-sobre .galeria-instagram:hover {
-  color: rgba(182, 61, 37, 0.8);
+.sobre .descricao-sobre {
+  width: 33vw;
+  height: 111vh;
+}
+
+.sobre .descricao-sobre .imagem-sobre {
+  z-index: 0;
+}
+
+.sobre .descricao-sobre .texto-sobre {
+  margin: auto;
+  height: 100%;
+  padding: 3.24rem 2.5rem;
+  background-color: rgba(182, 61, 37, 0.8);
+  position: relative;
+  z-index: 2;
+  top: -45.26rem;
+  left: 40rem;
+}
+
+.sobre .descricao-sobre .subtitulo {
+  text-align: inherit;
+  color: #fff;
+  font-family: 'Benton Sans Condensed Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.62rem;
+}
+
+.sobre .descricao-sobre .subtitulo-mostarda-claro {
+  color: #FF8A00;
+}
+
+.sobre .descricao-sobre .texto {
+  color: #fff;
+  font-family: 'Benton Sans Condensed Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+
+.sobre .descricao-sobre .texto b {
+  color: #FF8A00;
+  font-weight: bold;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.rodape {
+  height: 20rem;
+  position: relative;
+  top: -1.5rem;
+  background-image: url(../img/rodape-grafismos.png);
+  background-size: 21.75rem;
+}
+
+.rodape .rodape-elementos {
+  padding: 4rem 0;
+  height: 16.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 1.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.rodape .rodape-elementos .imagem-rodape {
+  margin: auto 0;
+  width: 10.37rem;
+  height: 5.94rem;
+}
+
+.rodape .rodape-elementos .rodape-texto {
+  margin: auto 0;
+}
+
+.rodape .rodape-elementos .rodape-texto p {
+  font-family: 'Benton Sans Condensed Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+
+.rodape .rodape-elementos .rodape-texto p a {
+  color: #E27B01;
+}
+
+.rodape .rodape-elementos .contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  margin: auto 0;
+}
+
+.rodape .rodape-elementos .contato p {
+  padding: 1rem 0;
+  color: #fff;
+  font-family: 'Benton Sans Condensed Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.rodape .rodape-elementos .contato .elemento-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rodape .rodape-elementos .contato .elemento-contato .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #B73D26;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.rodape .rodape-elementos .contato .elemento-contato .icons svg {
+  margin: auto 0;
 }
 /*# sourceMappingURL=style.css.map */

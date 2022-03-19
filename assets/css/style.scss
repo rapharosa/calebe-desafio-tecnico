@@ -326,12 +326,9 @@ $mostarda-claro: #FF8A00;
 }
 
 .sobre{
-    margin: 6.5rem auto;
     background-image: url(../img/rectangle-3.png);
 
     .galeria-sobre{
-        margin: 6.5rem 0;
-
         .siga{
             font-family: 'Benton Sans Condensed Black';
             font-style: normal;
@@ -342,19 +339,153 @@ $mostarda-claro: #FF8A00;
         }
 
         .fotos-sobre{
+            height: 16rem;
+            background-image: url(../img/grafismos-sobre.png);
+            background-size: 16rem;
             display: flex;
             flex-direction: row;
             width: 100%;
 
             .galeria-instagram{
+                margin: auto;
                 width: 12rem;
                 height: 12rem;
+            }
+        }
+    }
 
-                &:hover{
-                    color: $hibisco-transparente;
-                }
+    .descricao-sobre{
+        width: 33vw;
+        height: 111vh;
+
+        .imagem-sobre{
+            z-index: 0;
+        }
+
+        .texto-sobre{
+            margin: auto;
+            height: 100%;
+            padding: 3.24rem 2.5rem;
+            background-color: $hibisco-transparente;
+            position: relative;
+            z-index: 2;
+            top: -45.26rem;
+            left: 40rem;
+        }
+
+        .subtitulo{
+            text-align: inherit;
+            color: $branco;
+            font-family: 'Benton Sans Condensed Bold';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 3rem;
+            line-height: 3.62rem;
+        }
+
+        .subtitulo-mostarda-claro{
+            color: $mostarda-claro;
+        }
+
+        .texto{
+            color: $branco;
+            font-family: 'Benton Sans Condensed Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.03em;
+
+            b{
+                color: $mostarda-claro;
+                font-weight: bold;
             }
         }
     }
     
+}
+
+.mapa{
+    width: 100%;
+}
+
+.rodape{
+    height: 20rem;
+    position: relative;
+    top: -1.5rem;
+    background-image: url(../img/rodape-grafismos.png);
+    background-size: 21.75rem;
+
+    .rodape-elementos{
+        padding: 4rem 0;
+        height: 16.5rem;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 1.5rem;
+        background-color: $preto;
+        color: $branco;
+
+        .imagem-rodape{
+            margin: auto 0;
+            width: 10.37rem;
+            height: 5.94rem;
+        }
+
+        .rodape-texto{
+            margin: auto 0;
+
+            p{
+                font-family: 'Benton Sans Condensed Regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0.05em;
+
+                a{
+                    color: $mostarda-escuro;
+                }
+            }
+            
+        }
+
+        .contato{
+            display: flex;
+            flex-direction: column;
+            align-items: initial;
+            margin: auto 0;
+            p{
+                padding: 1rem 0;
+                color: $branco;
+                font-family: 'Benton Sans Condensed Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .elemento-contato{
+                display: flex;
+                justify-content: space-around;
+
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $hibisco;
+                    border-radius: 50%;
+                    width: 3.75rem;
+                    height: 3.75rem;
+    
+                    svg{
+                        margin: auto 0;
+                    }
+            }
+            
+            }
+        }
+    }
+
+
 }
