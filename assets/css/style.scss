@@ -141,6 +141,7 @@ $mostarda-claro: #FF8A00;
     margin: auto;
     width: 67rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     
     .chef-imagem{
