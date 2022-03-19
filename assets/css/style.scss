@@ -84,6 +84,7 @@ $mostarda-claro: #FF8A00;
             line-height: 22px;
             letter-spacing: 0.2em;
             text-transform: uppercase;
+            transition: 0.5s;
 
             &:hover{
                 color: $mostarda-escuro;
@@ -420,7 +421,7 @@ $mostarda-claro: #FF8A00;
         padding: 4rem 0;
         height: 16.5rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         position: relative;
         top: 1.5rem;
         background-color: $preto;
@@ -470,6 +471,8 @@ $mostarda-claro: #FF8A00;
                 justify-content: space-around;
 
                 .icons{
+                    text-decoration-color: none;
+                    text-decoration: none;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -477,7 +480,11 @@ $mostarda-claro: #FF8A00;
                     border-radius: 50%;
                     width: 3.75rem;
                     height: 3.75rem;
-    
+                    margin: 0 1rem;
+
+                    a:visited{
+                        color: $branco;
+                    }
                     svg{
                         margin: auto 0;
                     }

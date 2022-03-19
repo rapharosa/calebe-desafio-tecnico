@@ -81,6 +81,8 @@
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cabecalho .nav .nav-link:hover {
@@ -454,8 +456,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   position: relative;
   top: 1.5rem;
   background-color: #000;
@@ -518,6 +521,9 @@
 }
 
 .rodape .rodape-elementos .contato .elemento-contato .icons {
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,6 +537,11 @@
   border-radius: 50%;
   width: 3.75rem;
   height: 3.75rem;
+  margin: 0 1rem;
+}
+
+.rodape .rodape-elementos .contato .elemento-contato .icons a:visited {
+  color: #fff;
 }
 
 .rodape .rodape-elementos .contato .elemento-contato .icons svg {
