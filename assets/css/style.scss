@@ -3,6 +3,7 @@ $branco: #fff;
 $branco-gelo: #E5E5E5;
 $preto: #000;
 $hibisco: #B73D26;
+$hibisco-transparente: rgba(182, 61, 37, 0.8);
 $hibisco-claro: #D85931;
 $cinza-claro: #DADADA;
 $cinza-medio: #C4C4C4;
@@ -32,6 +33,20 @@ $mostarda-claro: #FF8A00;
         font-style: normal;
 }
 
+@font-face {
+    font-family: 'Benton Sans Condensed Bold';
+    src: url('../fonts/BentonSans\ Condensed\ Bold.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benton Sans Condensed Medium';
+    src: url('../fonts/BentonSans\ Condensed\ Medium.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
 .cabecalho {
     position: static;
     gap: 30rem;
@@ -49,6 +64,7 @@ $mostarda-claro: #FF8A00;
         height: 17.33rem;
         margin-left: 9.91rem;
         margin-top: 1.3rem;
+        z-index: 100;
     }
 
     .nav{
@@ -91,19 +107,37 @@ $mostarda-claro: #FF8A00;
 
 .conteudo{
     width: 100%;
-    height: 47.8rem;
+    height: 30rem;
     background-color: $hibisco;
+    position: relative;
+    z-index: 0;
     
+    .grafismos1{
+        background-image: url();
+        background-size: 22rem;
+        width: 100%;
+        height: 10rem;
+    }
+    .grafismos2{
+        background-image: url();
+        background-size: 22rem;
+        width: 100%;
+        height: 30rem;
+    }
 
     .entrada-marun{
         width: 100%;
+        z-index: 2;
+        top: 9rem;
+        position: absolute;
     }
 
     .conteudo-texto{
         width: 28rem;
         position: relative;
-        top: -20rem;
+        top: -22rem;
         left: 30rem;
+        z-index: 3;
     }
 
     .titulo{
@@ -138,58 +172,189 @@ $mostarda-claro: #FF8A00;
 }
 
 .cozinha{
-    margin: auto;
-    width: 67rem;
+    width: 70rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    .chef-imagem{
-        width: 30rem;
-        border-radius: 8px
-    }
+    flex-direction: column;
+    margin: 3rem auto;
+    padding-top: 6rem;
 
-    .conteudo-texto-cozinha{
-        padding-left: 3rem;
+    .cozinha-apresentacao{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .chef-imagem{
+            width: 24rem;
+            margin: 0 4.75rem;
+            align-self: flex-start;
+        }
 
         .nome-card{
-
-            padding-top: 4rem;
             text-transform: uppercase;
-            color: $hibisco;
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
             font-weight: 400;
             font-size: 13px;
             line-height: 140%;
             letter-spacing: 0.745em;
+            color: $hibisco;
+            margin: 1rem 0;
         }
-        
+
         .titulo-cozinha{
             font-family: 'Benton Sans Condensed Black';
             font-style: normal;
             font-weight: 800;
-            font-size: 64px;
-            line-height: 77px;
+            font-size: 4rem;
+            line-height: 4.5rem;
         }
 
         .titulo-cozinha-hibisco{
             color: $hibisco;
         }
 
-        .texto {
-            padding-top: 4rem;
-            color: $preto;
+        .texto{
+            margin-top: 2rem;
+            padding-right: 1rem;
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
-            font-weight: 300;
-            font-size: 1rem;
+            font-weight: 400;
+            font-size: 1.2rem;
             line-height: 130%;
             letter-spacing: 0.02em;
+
+            b{
+                color: $hibisco;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .galeria-cozinha{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-bottom: 1px solid #9191914d;
+        padding-bottom: 2rem;
+    }
+    
+    .imagem-galeria{
+        margin: auto;
+        padding: 1.5rem 0;
+        width: 20rem;
+    }
+}
+
+.drinks{
+    width: 90%;
+    display: flex;
+    margin: 4rem auto;
+
+    .conteudo-texto-drinks{
+        width: 50rem;
+        .nome-card{
+            text-transform: uppercase;
+            font-family: 'Benton Sans Condensed Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            letter-spacing: 0.745em;
+            color: $hibisco;
+            margin: 1rem 0;
         }
     
-        .texto b{
-            color: $hibisco
+        .titulo-drinks{
+            text-align: left;
+            font-family: 'Benton Sans Condensed Black';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem;
+            line-height: 4.5rem;
         }
-    }  
+    
+        .titulo-drinks-hibisco{
+            color: $hibisco;
+        }
+    
+        .texto{
+            margin: 3rem 0;
+            padding-right: 1rem;
+            font-family: 'Benton Sans Condensed Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+    
+            b{
+                color: $hibisco;
+                font-weight: bold;
+            }
+        }
+        
+        .cardapio{
+            width: 305px;
+            height: 62px;
+            border-radius: 8px;
+            background-color: $mostarda-escuro;
+            color: $branco;
+            text-transform: uppercase;
+            text-align: center;
+            border: none;
+            font-family: 'Benton Sans Condensed Medium';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.15em;
+        }
+    }
+    
+    .galeria-drinks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .drinks-imagem{
+        margin-bottom: 1rem;
+    }
+}
+
+.sobre{
+    margin: 6.5rem auto;
+    background-image: url(../img/rectangle-3.png);
+
+    .galeria-sobre{
+        margin: 6.5rem 0;
+
+        .siga{
+            font-family: 'Benton Sans Condensed Black';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem;
+            line-height: 4.5rem;
+            text-align: center;
+        }
+
+        .fotos-sobre{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .galeria-instagram{
+                width: 12rem;
+                height: 12rem;
+
+                &:hover{
+                    color: $hibisco-transparente;
+                }
+            }
+        }
+    }
+    
 }
