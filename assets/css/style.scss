@@ -180,21 +180,21 @@ $mostarda-claro: #FF8A00;
 }
 
 .cozinha{
-    width: 70rem;
+    width: 80vw;
     display: flex;
     flex-direction: column;
-    margin: 3rem auto;
-    padding-top: 6rem;
+    margin: 8vw auto;
 
     .cozinha-apresentacao{
         display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 2vw;
 
         .chef-imagem{
-            width: 24rem;
-            margin: 0 4.75rem;
+            width: 28vw;
+            margin: 0 3vw;
             align-self: flex-start;
         }
 
@@ -203,19 +203,19 @@ $mostarda-claro: #FF8A00;
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 0.75vw;
             line-height: 140%;
-            letter-spacing: 0.745em;
+            letter-spacing: 0.5vw;
             color: $hibisco;
-            margin: 1rem 0;
+            margin: 0.75vw 0;
         }
 
         .titulo-cozinha{
             font-family: 'Benton Sans Condensed Black';
             font-style: normal;
             font-weight: 800;
-            font-size: 4rem;
-            line-height: 4.5rem;
+            font-size: 4vw;
+            line-height: 4.5vw;
         }
 
         .titulo-cozinha-hibisco{
@@ -223,12 +223,12 @@ $mostarda-claro: #FF8A00;
         }
 
         .texto{
-            margin-top: 2rem;
-            padding-right: 1rem;
+            margin-top: 2vw;
+            padding-right: 9.5vw;
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: 1.25vw;
             line-height: 130%;
             letter-spacing: 0.02em;
 
@@ -243,15 +243,14 @@ $mostarda-claro: #FF8A00;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        border-bottom: 1px solid #9191914d;
-        padding-bottom: 2rem;
+        justify-content: space-evenly;
+        border-bottom: 2px solid #9191914d;
+        padding-bottom: 2.5vw;
     }
     
     .imagem-galeria{
-        margin: auto;
-        padding: 1.5rem 0;
-        width: 20rem;
+        margin: 1vw auto;
+        width: 25vw;
     }
 }
 
