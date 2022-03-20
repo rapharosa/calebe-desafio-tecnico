@@ -55,7 +55,7 @@ $mostarda-claro: #FF8A00;
     display: flex;
     align-items: center;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
 
 
     .cabecalho-imagem{
@@ -105,36 +105,46 @@ $mostarda-claro: #FF8A00;
 
 .conteudo{
     width: 100%;
-    height: 30rem;
+    height: 44.25vw;
     background-color: $hibisco;
-    position: relative;
     z-index: 0;
     
-    .grafismos1{
-        background-image: url();
-        background-size: 22rem;
-        width: 100%;
-        height: 10rem;
+    .grafismos-pai{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .grafismos1{
+            background-image: url(../img/grafismos-main-superior.png);
+            background-size: 14vw;
+            background-position-y: 5.5vw;
+            width: 100%;
+            height: 15vw;
+        }
+        .grafismos2{
+            background-image: url(../img/grafismos-main-inferior.png);
+            background-size: 14vw;
+            background-position-y: 16.75vw;
+            width: 100%;
+            height: 30.5vw;
+        }
     }
-    .grafismos2{
-        background-image: url();
-        background-size: 22rem;
-        width: 100%;
-        height: 30rem;
-    }
+
+        
 
     .entrada-marun{
         width: 100%;
+        height: 30vw;
         z-index: 2;
-        top: 9rem;
+        top: 10.6vw;
         position: absolute;
     }
 
     .conteudo-texto{
-        width: 28rem;
+        width: 33vw;
         position: relative;
-        top: -22rem;
-        left: 30rem;
+        top: -25vw;
+        left: 20vw;
         z-index: 3;
     }
 
@@ -142,8 +152,8 @@ $mostarda-claro: #FF8A00;
         font-family: 'Benton Sans Condensed Black';
         font-style: normal;
         font-weight: 800;
-        font-size: 4rem;
-        line-height: 4.81rem;
+        font-size: 4vw;
+        line-height: 4vw;
     }
 
     .titulo-branco{
