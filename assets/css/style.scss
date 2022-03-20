@@ -78,6 +78,7 @@ $mostarda-claro: #FF8A00;
     
 
         .nav-link{
+            display: flex;
             color: $branco;
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
@@ -129,9 +130,8 @@ $mostarda-claro: #FF8A00;
         }
     }
 
-        
-
     .entrada-marun{
+        filter: brightness(50%);
         width: 100%;
         height: 30.5vw;
         z-index: 2;
@@ -145,7 +145,7 @@ $mostarda-claro: #FF8A00;
         z-index: 3;
         top: -25vw;
         left: 20vw;
-
+    
         .titulo{
             font-family: 'Benton Sans Condensed Black';
             font-style: normal;
@@ -162,7 +162,7 @@ $mostarda-claro: #FF8A00;
             color: $mostarda-claro;
         }
     
-        .texto {
+        .texto{
             padding-top: 2vw;
             color: $branco;
             font-family: 'Benton Sans Condensed Regular';
@@ -174,11 +174,9 @@ $mostarda-claro: #FF8A00;
         }
     
         .texto b{
-            color: $hibisco
+            color: $hibisco;
         }
     }
-
-    
 }
 
 .cozinha{
@@ -248,12 +246,14 @@ $mostarda-claro: #FF8A00;
         justify-content: space-evenly;
         border-bottom: 2px solid #9191914d;
         padding-bottom: 2.5vw;
+
+        .imagem-galeria{
+            margin: 1vw auto;
+            width: 25vw;
+        }
     }
     
-    .imagem-galeria{
-        margin: 1vw auto;
-        width: 25vw;
-    }
+    
 }
 
 .drinks{
@@ -290,7 +290,6 @@ $mostarda-claro: #FF8A00;
     
         .texto{
             margin: 2vw 0;
-
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
             font-weight: 400;
@@ -365,29 +364,25 @@ $mostarda-claro: #FF8A00;
             margin-bottom: 8vw;
 
             .galeria-instagram{
-                backdrop-filter: $hibisco-transparente;
+                background-color: $hibisco-transparente;
                 overflow: hidden;
                 margin: auto;
                 width: 15.5vw;
                 height: 15.5vw;
             }
-
             .cut1{
-                overflow: hidden;
                 margin-left: -10vw;
             }
         }
     }
 
     .descricao-sobre{
-        width: 25vw;
+        width: 100%;
 
         .conteiner-imagem{
             background-image: url(../img/marun-interno.png);
-            width: 98.75vw;
+            width: 100%;
         }
-       
-
         .texto-sobre{
             width: 30vw;
             height: 100%;
@@ -396,7 +391,6 @@ $mostarda-claro: #FF8A00;
             position: relative;
             left: 50vw;
         }
-
         .subtitulo{
             text-align: inherit;
             color: $branco;
@@ -434,7 +428,7 @@ $mostarda-claro: #FF8A00;
 }
 
 .rodape{
-    height: 20rem;
+    height: 24vw;
     position: relative;
     top: -1.75vw;
     background-image: url(../img/rodape-grafismos.png);
@@ -505,11 +499,260 @@ $mostarda-claro: #FF8A00;
                     height: 4vw;
                     margin: 0 1vw;
 
+                    a{
+                        display: flex;
+                    }
+
                     a:visited{
                         color: $branco;
                     }
                     svg{
                         margin: auto 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .cabecalho{
+        height: 9vw;
+        position: static;
+
+        .cabecalho-imagem{
+            display: none;
+        }
+        .nav{
+            justify-content: space-around;
+
+            .nav-link{
+                font-size: 3.5vw;
+            }
+            .icons{
+                width: 3.5vw;
+                gap: 4vw;
+
+                svg{
+                    width: 3.5vw;
+                    height: 3.5vw;
+                }
+            }
+        }
+    }
+
+    .conteudo{
+        background-color: $branco;
+        height: auto;
+
+        .grafismos-pai{
+            display: none;
+        }
+
+        .entrada-marun{
+            display: none;
+        }
+        .conteudo-texto{
+            background-image: url(../img/Rectangle-13.png);
+            background-size: 210vw;
+            background-position-x: -50vw;
+            background-repeat: no-repeat;
+            
+            position: static;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            top: 0vw;
+            left: 0vw;
+
+            .titulo{
+                padding-top: 4vw;
+                text-align: center;
+                font-family: 'Benton Sans Condensed Black';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 8vw;
+                line-height: 8vw;
+                text-shadow: 1px 1px 2px $preto;
+            }
+
+            .texto {
+                color: $branco;
+                font-family: 'Benton Sans Condensed Regular';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 4vw;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                padding: 4vw 8vw;
+                text-shadow: 1px 1px 2px $preto;
+            }
+        }
+    }
+
+    .cozinha{
+        .cozinha-apresentacao{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .chef-imagem{
+                margin: 0 auto;
+                width: 16rem;
+                border-radius: 10px;
+                padding-bottom: 4vw;
+            }
+
+            .conteudo-texto-cozinha{
+                margin: 0 auto;
+
+                .nome-card{
+                    text-align: center;
+                    font-size: 4vw;
+                }
+    
+                .titulo-cozinha{
+                    text-align: center;
+                    font-size: 8vw;
+                    line-height: 8vw;
+                }
+    
+                .titulo-cozinha-hibisco{
+                    text-align: center;
+    
+                }
+    
+                .texto{
+                    text-align: center;
+                    font-size: 4.25vw;
+                }
+            }
+           
+        }
+
+        .galeria-cozinha{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            .imagem-galeria{
+                margin: 2vw auto;
+                width: 80vw;
+            }
+        }
+    }
+
+    .drinks{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 80vw;
+
+        .conteudo-texto-drinks{
+            margin: 0 auto;
+            width: 70vw;
+            .nome-card{
+                text-align: center;
+                font-size: 4vw;
+                margin: 0;
+                padding: 4vw 0;
+            }
+
+            .titulo-drinks{
+                text-align: center;
+                font-size: 8vw;
+                line-height: 8vw;
+            }
+
+            .texto{
+                text-align: center;
+                margin: 4vw 0;
+                font-size: 4vw;
+            }
+            .cardapio{
+                width: 60vw;
+                height: 12vw;
+                border-radius: 8px;
+                font-size: 4vw;
+                margin-left: 5vw;
+                margin-bottom: 4vw;
+            }
+        }
+
+        .galeria-drinks{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 4vw;
+
+            .drinks-imagem{
+                width: 60vw;
+            }
+        }
+        
+    }
+
+    .sobre{
+        .galeria-sobre{
+            .siga{
+                color: $mostarda-escuro;
+                font-size: 10vw;
+                text-shadow: 2px 2px 4px $preto;
+            }
+
+            .fotos-sobre{
+                display: none;
+            }
+        }
+        .descricao-sobre{
+            width: 100vw;
+            .conteiner-imagem{
+                background-image: url(../img/grafismos-sobre.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .texto-sobre{
+                text-align: center;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+                left: 0vw;
+                text-shadow: 2px 2px 4px $preto;
+                
+            }
+            .subtitulo{
+                font-size: 7vw;
+                line-height: 7vw;
+            }
+            .texto{
+                font-size: 5vw;
+            }
+        }
+    }
+
+    .rodape{
+        height: 40vw;
+        .rodape-elementos{
+            height: 40vw;
+            .imagem-rodape{
+                width: 19vw;
+            }
+    
+            .rodape-texto{
+                p{
+                    font-size: 3vw;
+                }  
+            }
+            .contato{
+                p{
+                    font-size: 3vw;
+                }
+                .elemento-contato{  
+                    .icons{
+                        width: 8vw;
+                        height: 8vw;
+                        svg{
+                            width: 4vw;
+                            height: 4vw;
+                        }
                     }
                 }
             }

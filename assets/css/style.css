@@ -76,6 +76,9 @@
 }
 
 .cabecalho .nav .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   font-family: 'Benton Sans Condensed Regular';
   font-style: normal;
@@ -141,6 +144,8 @@
 }
 
 .conteudo .entrada-marun {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
   width: 100%;
   height: 30.5vw;
   z-index: 2;
@@ -277,7 +282,7 @@
   padding-bottom: 2.5vw;
 }
 
-.cozinha .imagem-galeria {
+.cozinha .galeria-cozinha .imagem-galeria {
   margin: 1vw auto;
   width: 25vw;
 }
@@ -408,8 +413,7 @@
 }
 
 .sobre .galeria-sobre .fotos-sobre .galeria-instagram {
-  -webkit-backdrop-filter: rgba(182, 61, 37, 0.8);
-          backdrop-filter: rgba(182, 61, 37, 0.8);
+  background-color: rgba(182, 61, 37, 0.8);
   overflow: hidden;
   margin: auto;
   width: 15.5vw;
@@ -417,17 +421,16 @@
 }
 
 .sobre .galeria-sobre .fotos-sobre .cut1 {
-  overflow: hidden;
   margin-left: -10vw;
 }
 
 .sobre .descricao-sobre {
-  width: 25vw;
+  width: 100%;
 }
 
 .sobre .descricao-sobre .conteiner-imagem {
   background-image: url(../img/marun-interno.png);
-  width: 98.75vw;
+  width: 100%;
 }
 
 .sobre .descricao-sobre .texto-sobre {
@@ -473,7 +476,7 @@
 }
 
 .rodape {
-  height: 20rem;
+  height: 24vw;
   position: relative;
   top: -1.75vw;
   background-image: url(../img/rodape-grafismos.png);
@@ -570,11 +573,240 @@
   margin: 0 1vw;
 }
 
+.rodape .rodape-elementos .contato .elemento-contato .icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .rodape .rodape-elementos .contato .elemento-contato .icons a:visited {
   color: #fff;
 }
 
 .rodape .rodape-elementos .contato .elemento-contato .icons svg {
   margin: auto 0;
+}
+
+@media screen and (max-width: 425px) {
+  .cabecalho {
+    height: 9vw;
+    position: static;
+  }
+  .cabecalho .cabecalho-imagem {
+    display: none;
+  }
+  .cabecalho .nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cabecalho .nav .nav-link {
+    font-size: 3.5vw;
+  }
+  .cabecalho .nav .icons {
+    width: 3.5vw;
+    gap: 4vw;
+  }
+  .cabecalho .nav .icons svg {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  .conteudo {
+    background-color: #fff;
+    height: auto;
+  }
+  .conteudo .grafismos-pai {
+    display: none;
+  }
+  .conteudo .entrada-marun {
+    display: none;
+  }
+  .conteudo .conteudo-texto {
+    background-image: url(../img/Rectangle-13.png);
+    background-size: 210vw;
+    background-position-x: -50vw;
+    background-repeat: no-repeat;
+    position: static;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    top: 0vw;
+    left: 0vw;
+  }
+  .conteudo .conteudo-texto .titulo {
+    padding-top: 4vw;
+    text-align: center;
+    font-family: 'Benton Sans Condensed Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 8vw;
+    line-height: 8vw;
+    text-shadow: 1px 1px 2px #000;
+  }
+  .conteudo .conteudo-texto .texto {
+    color: #fff;
+    font-family: 'Benton Sans Condensed Regular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4vw;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    padding: 4vw 8vw;
+    text-shadow: 1px 1px 2px #000;
+  }
+  .cozinha .cozinha-apresentacao {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cozinha .cozinha-apresentacao .chef-imagem {
+    margin: 0 auto;
+    width: 16rem;
+    border-radius: 10px;
+    padding-bottom: 4vw;
+  }
+  .cozinha .cozinha-apresentacao .conteudo-texto-cozinha {
+    margin: 0 auto;
+  }
+  .cozinha .cozinha-apresentacao .conteudo-texto-cozinha .nome-card {
+    text-align: center;
+    font-size: 4vw;
+  }
+  .cozinha .cozinha-apresentacao .conteudo-texto-cozinha .titulo-cozinha {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  .cozinha .cozinha-apresentacao .conteudo-texto-cozinha .titulo-cozinha-hibisco {
+    text-align: center;
+  }
+  .cozinha .cozinha-apresentacao .conteudo-texto-cozinha .texto {
+    text-align: center;
+    font-size: 4.25vw;
+  }
+  .cozinha .galeria-cozinha {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .cozinha .galeria-cozinha .imagem-galeria {
+    margin: 2vw auto;
+    width: 80vw;
+  }
+  .drinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 80vw;
+  }
+  .drinks .conteudo-texto-drinks {
+    margin: 0 auto;
+    width: 70vw;
+  }
+  .drinks .conteudo-texto-drinks .nome-card {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0;
+    padding: 4vw 0;
+  }
+  .drinks .conteudo-texto-drinks .titulo-drinks {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  .drinks .conteudo-texto-drinks .texto {
+    text-align: center;
+    margin: 4vw 0;
+    font-size: 4vw;
+  }
+  .drinks .conteudo-texto-drinks .cardapio {
+    width: 60vw;
+    height: 12vw;
+    border-radius: 8px;
+    font-size: 4vw;
+    margin-left: 5vw;
+    margin-bottom: 4vw;
+  }
+  .drinks .galeria-drinks {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4vw;
+  }
+  .drinks .galeria-drinks .drinks-imagem {
+    width: 60vw;
+  }
+  .sobre .galeria-sobre .siga {
+    color: #E27B01;
+    font-size: 10vw;
+    text-shadow: 2px 2px 4px #000;
+  }
+  .sobre .galeria-sobre .fotos-sobre {
+    display: none;
+  }
+  .sobre .descricao-sobre {
+    width: 100vw;
+  }
+  .sobre .descricao-sobre .conteiner-imagem {
+    background-image: url(../img/grafismos-sobre.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .sobre .descricao-sobre .texto-sobre {
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    left: 0vw;
+    text-shadow: 2px 2px 4px #000;
+  }
+  .sobre .descricao-sobre .subtitulo {
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+  .sobre .descricao-sobre .texto {
+    font-size: 5vw;
+  }
+  .rodape {
+    height: 40vw;
+  }
+  .rodape .rodape-elementos {
+    height: 40vw;
+  }
+  .rodape .rodape-elementos .imagem-rodape {
+    width: 19vw;
+  }
+  .rodape .rodape-elementos .rodape-texto p {
+    font-size: 3vw;
+  }
+  .rodape .rodape-elementos .contato p {
+    font-size: 3vw;
+  }
+  .rodape .rodape-elementos .contato .elemento-contato .icons {
+    width: 8vw;
+    height: 8vw;
+  }
+  .rodape .rodape-elementos .contato .elemento-contato .icons svg {
+    width: 4vw;
+    height: 4vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
