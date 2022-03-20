@@ -386,6 +386,7 @@
 
 .sobre {
   background-image: url(../img/rectangle-3.png);
+  background-size: contain;
 }
 
 .sobre .galeria-sobre .siga {
@@ -430,6 +431,7 @@
 
 .sobre .descricao-sobre .conteiner-imagem {
   background-image: url(../img/marun-interno.png);
+  background-size: 120vw;
   width: 100%;
 }
 
@@ -587,7 +589,7 @@
   margin: auto 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 786px) {
   .cabecalho {
     height: 9vw;
     position: static;
@@ -687,6 +689,7 @@
     text-align: center;
   }
   .cozinha .cozinha-apresentacao .conteudo-texto-cozinha .texto {
+    padding-right: 0;
     text-align: center;
     font-size: 4.25vw;
   }
