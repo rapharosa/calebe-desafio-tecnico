@@ -48,31 +48,35 @@ $mostarda-claro: #FF8A00;
 }
 
 .cabecalho {
-    position: static;
-    gap: 30rem;
+    position: fixed;
+    z-index: 10000000;
+    gap: 32vw;
     background-color: $hibisco;
     display: flex;
     align-items: center;
     width: 100%;
-    height: 5.93rem;
+    height: 12vh;
 
 
     .cabecalho-imagem{
-        position: relative;
+        position: fixed;
         align-self: baseline;
-        width: 3.63rem;
-        height: 17.33rem;
-        margin-left: 9.91rem;
-        margin-top: 1.3rem;
+        width: 4.5vw;
+        height: 42vh;
+        margin-left: 10vw;
+        margin-top: 2vh;
         z-index: 100;
     }
 
     .nav{
+        margin-right: 5vw;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 39.61rem;
-        height: 2.37rem;
+        justify-content: flex-end;
+        gap: 5vw;
+        width: 100%;
+        height: 5vh;
+        z-index: 10000;
     
 
         .nav-link{
@@ -80,28 +84,21 @@ $mostarda-claro: #FF8A00;
             font-family: 'Benton Sans Condensed Regular';
             font-style: normal;
             font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-            letter-spacing: 0.2em;
+            font-size: 1vw;
+            line-height: 1vh;
+            letter-spacing: 0.3vw;
             text-transform: uppercase;
             transition: 0.5s;
 
             &:hover{
                 color: $mostarda-escuro;
-                font-family: 'Benton Sans Condensed Regular';
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 800;
-                line-height: 22px;
-                letter-spacing: 0.2em;
-                text-align: left;
             }
         }
 
         .icons{
             display: flex;
             justify-content: space-between;
-            gap: 3rem;
+            gap: 3vw;
         }
     }
 }
@@ -311,6 +308,12 @@ $mostarda-claro: #FF8A00;
             font-size: 18px;
             line-height: 22px;
             letter-spacing: 0.15em;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: $mostarda-claro;
+                border: $hibisco solid 1px;
+            }
         }
     }
     
@@ -336,7 +339,7 @@ $mostarda-claro: #FF8A00;
             font-weight: 800;
             font-size: 4rem;
             line-height: 4.5rem;
-            text-align: center;
+            text-align: center;            
         }
 
         .fotos-sobre{
@@ -360,6 +363,8 @@ $mostarda-claro: #FF8A00;
         height: 111vh;
 
         .imagem-sobre{
+            margin: auto;
+            width: 99vw;
             z-index: 0;
         }
 
