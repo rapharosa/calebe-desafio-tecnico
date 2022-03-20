@@ -46,7 +46,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 5vw;
 }
 
 .cabecalho .cabecalho-imagem {
@@ -54,9 +54,8 @@
   -ms-flex-item-align: baseline;
       align-self: baseline;
   width: 4.5vw;
-  height: 42vh;
+  top: 2vw;
   margin-left: 3vw;
-  margin-top: 2vh;
   z-index: 100;
 }
 
@@ -73,7 +72,6 @@
           justify-content: flex-end;
   gap: 5vw;
   width: 100%;
-  height: 5vh;
   z-index: 10000;
 }
 
@@ -98,9 +96,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 3vw;
 }
 
@@ -151,12 +151,12 @@
 .conteudo .conteudo-texto {
   width: 33vw;
   position: relative;
+  z-index: 3;
   top: -25vw;
   left: 20vw;
-  z-index: 3;
 }
 
-.conteudo .titulo {
+.conteudo .conteudo-texto .titulo {
   font-family: 'Benton Sans Condensed Black';
   font-style: normal;
   font-weight: 800;
@@ -164,25 +164,26 @@
   line-height: 4vw;
 }
 
-.conteudo .titulo-branco {
+.conteudo .conteudo-texto .titulo-branco {
   color: #fff;
 }
 
-.conteudo .titulo-mostarda {
+.conteudo .conteudo-texto .titulo-mostarda {
   color: #FF8A00;
 }
 
-.conteudo .texto {
+.conteudo .conteudo-texto .texto {
+  padding-top: 2vw;
   color: #fff;
   font-family: 'Benton Sans Condensed Regular';
   font-style: normal;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1vw;
   line-height: 130%;
   letter-spacing: 0.02em;
 }
 
-.conteudo .texto b {
+.conteudo .conteudo-texto .texto b {
   color: #B73D26;
 }
 
@@ -375,6 +376,7 @@
 
 .drinks .drinks-imagem {
   margin-bottom: 1vw;
+  width: 11vw;
 }
 
 .sobre {
@@ -406,9 +408,17 @@
 }
 
 .sobre .galeria-sobre .fotos-sobre .galeria-instagram {
+  -webkit-backdrop-filter: rgba(182, 61, 37, 0.8);
+          backdrop-filter: rgba(182, 61, 37, 0.8);
+  overflow: hidden;
   margin: auto;
   width: 15.5vw;
   height: 15.5vw;
+}
+
+.sobre .galeria-sobre .fotos-sobre .cut1 {
+  overflow: hidden;
+  margin-left: -10vw;
 }
 
 .sobre .descricao-sobre {
@@ -468,6 +478,7 @@
   top: -1.75vw;
   background-image: url(../img/rodape-grafismos.png);
   background-size: 25.5vw;
+  background-repeat: repeat-x;
 }
 
 .rodape .rodape-elementos {
