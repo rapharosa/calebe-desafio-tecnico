@@ -576,6 +576,7 @@
 }
 
 .rodape .rodape-elementos .contato .elemento-contato .icons a {
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,10 +587,11 @@
 }
 
 .rodape .rodape-elementos .contato .elemento-contato .icons svg {
+  color: #fff;
   margin: auto 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .cabecalho {
     height: 9vw;
     position: static;

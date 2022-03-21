@@ -500,8 +500,8 @@ $mostarda-claro: #FF8A00;
                     width: 4vw;
                     height: 4vw;
                     margin: 0 1vw;
-
                     a{
+                        color: $branco;
                         display: flex;
                     }
 
@@ -509,6 +509,7 @@ $mostarda-claro: #FF8A00;
                         color: $branco;
                     }
                     svg{
+                        color: $branco;
                         margin: auto 0;
                     }
                 }
@@ -517,7 +518,7 @@ $mostarda-claro: #FF8A00;
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
     .cabecalho{
         height: 9vw;
         position: static;
